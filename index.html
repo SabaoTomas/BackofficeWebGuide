@@ -16,13 +16,13 @@
                 <a href="#Login">Login</a>
             </li>
             <li>
+                <a href="#ListServices">Listar servicios</a>
+            </li>
+            <li>
                 <a href="#AddAdmin">Agregar administradores</a>
             </li>
             <li>
                 <a href="#SearchUser">Buscar usuarios</a>
-            </li>
-            <li>
-                <a href="#ListServices">Listar servicios</a>
             </li>
             <li>
                 <a href="#EditTrainings">Administrar entrenamientos</a>
@@ -45,8 +45,25 @@
     Se pedirá al usuario un correo electrónico y una contraseña asociadas a una cuenta de administrador
     <div style="margin-left: 2rem; margin-right: 2rem;">
         <img src="imgs/LoginPage.PNG">
+    </div>   
+</div>
+
+<div>
+    <h3 id="ListServices"> Listar servicios</h3>
+    Al ingresar correctamente al Backoffice. Se presentara un listado del estado
+    de los distintos servicios
+    <div style="margin-left: 2rem; margin-right: 2rem; margin-top: 1rem;">
+        <img src="imgs/ListarServiciosUnoFallando.PNG">
     </div>
-    
+    Servicios en rojo se encuentran inactivos, en verde se encuentran activos
+    <div>El filtro de la página permite mostrar sólo los servicios activos/inactivos</div>
+    <div style="margin-left: 2rem; margin-right: 2rem; margin-top: 1rem;">
+        <img src="imgs/ListarServiciosSoloInactivos.PNG">
+    </div>
+    <div style="margin-left: 2rem; margin-right: 2rem; margin-top: 1rem;">
+        <img src="imgs/ListarServiciosSoloActivos.PNG">
+    </div>
+
 </div>
 
 <div>
@@ -123,60 +140,6 @@
 </div>
 
 <div>
-    <h3 id="ListServices"> Listar servicios</h3>
-    Al ingresar correctamente al Backoffice. Se presentara un listado del estado
-    de los distintos servicios
-    <div style="margin-left: 2rem; margin-right: 2rem; margin-top: 1rem;">
-        <img src="imgs/ListarServiciosUnoFallando.PNG">
-    </div>
-    Servicios en rojo se encuentran inactivos, en verde se encuentran activos
-    <div>El filtro de la página permite mostrar sólo los servicios activos/inactivos</div>
-    <div style="margin-left: 2rem; margin-right: 2rem; margin-top: 1rem;">
-        <img src="imgs/ListarServiciosSoloInactivos.PNG">
-    </div>
-    <div style="margin-left: 2rem; margin-right: 2rem; margin-top: 1rem;">
-        <img src="imgs/ListarServiciosSoloActivos.PNG">
-    </div>
-
-</div>
-
-
-<div>
-    <h3 id="BlockServices">Bloquear servicios</h3>
-    Seleccionando "Bloquear servicios" en la barra de navegación nos encontramos con 
-    la siguiente página
-    <div style="margin-left: 2rem; margin-right: 2rem; margin-top: 1rem;">
-        <img src="imgs/BloquearServicios.PNG">
-    </div>
-    Cada servicio tiene un toggle, que indica el estado actual del servicio y un "Estado" que 
-    indica si el servicio se encuentra disponible.  Que un servicio se encuentre bloqueado 
-    no implica que el servicio no esta disponible. Un servicio no disponible no muestra ningún 
-    estado en su toggle.
-    <div style="margin-left: 2rem; margin-right: 2rem; margin-top: 1rem;">
-        <img src="imgs/ServicioEntrenamientosBloqueado.PNG">
-    </div> 
-    Al bloquear un servicio, el mismo aparece listado como inactivo en la pagina de servicios
-    <div style="margin-left: 2rem; margin-right: 2rem; margin-top: 1rem;">
-        <img src="imgs/ListarServiciosUnoFallando.PNG">
-    </div>
-</div>
-
-
-<div>
-    <h3 id="EntrenadorReconocido">Aprobar/rechazar peticiones de entrenador reconocido</h3>
-    La pestaña "Aprobar/rechazar peticiones de entrenador" muestra las distintas peticiones
-    realizadas por los entrenadores. Cada petición tiene un video asociado, que no aparece
-    inicialmente en la ventana.
-    <div style="margin-left: 2rem; margin-right: 2rem; margin-top: 1rem;">
-        <img src="imgs/VentanaEntrenadorReconocido.PNG">
-    </div>
-    Seleccionar "mostrar" permite visualizar el video en la misma página
-    <div style="margin-left: 2rem; margin-right: 2rem; margin-top: 1rem;">
-        <img src="imgs/PeticionConVideo.PNG">
-    </div>
-</div>
-
-<div>
     <h3 id="EditTrainings">Administrar entrenamientos</h3>
     <div style="margin-left: 2rem; margin-right: 2rem; margin-top: 1rem;">
         <img src="imgs/FiltrosEntrenamientos.PNG">
@@ -232,9 +195,48 @@
     </div>
 </div>
 
+
+
+<div>
+    <h3 id="BlockServices">Bloquear servicios</h3>
+    Seleccionando "Bloquear servicios" en la barra de navegación nos encontramos con 
+    la siguiente página
+    <div style="margin-left: 2rem; margin-right: 2rem; margin-top: 1rem;">
+        <img src="imgs/BloquearServicios.PNG">
+    </div>
+    Cada servicio tiene un toggle, que indica el estado actual del servicio y un "Estado" que 
+    indica si el servicio se encuentra disponible.  Que un servicio se encuentre bloqueado 
+    no implica que el servicio no esta disponible. Un servicio no disponible no muestra ningún 
+    estado en su toggle.
+    <div style="margin-left: 2rem; margin-right: 2rem; margin-top: 1rem;">
+        <img src="imgs/ServicioEntrenamientosBloqueado.PNG">
+    </div> 
+    Al bloquear un servicio, el mismo aparece listado como inactivo en la pagina de servicios
+    <div style="margin-left: 2rem; margin-right: 2rem; margin-top: 1rem;">
+        <img src="imgs/ListarServiciosUnoFallando.PNG">
+    </div>
+</div>
+
+
+<div>
+    <h3 id="EntrenadorReconocido">Aprobar/rechazar peticiones de entrenador reconocido</h3>
+    La pestaña "Aprobar/rechazar peticiones de entrenador" muestra las distintas peticiones
+    realizadas por los entrenadores. Cada petición tiene un video asociado, que no aparece
+    inicialmente en la ventana.
+    <div style="margin-left: 2rem; margin-right: 2rem; margin-top: 1rem;">
+        <img src="imgs/VentanaEntrenadorReconocido.PNG">
+    </div>
+    Seleccionar "mostrar" permite visualizar el video en la misma página
+    <div style="margin-left: 2rem; margin-right: 2rem; margin-top: 1rem;">
+        <img src="imgs/PeticionConVideo.PNG">
+    </div>
+</div>
+
+
+
 <div>
 
-    <h3 id = "#Metrics">Métricas</h3>
+    <h3 id = "Metrics">Métricas</h3>
     En la pestaña métricas,se elige la métrica que se quiere visualizar
     <div style="margin-left: 2rem; margin-right: 2rem; margin-top: 1rem;">
         <img src="imgs/EjemploMetrica.PNG">
