@@ -1,33 +1,40 @@
+<!DOCTYPE html>
+<html>
 
+    <head>
+       <title>Backoffice web - guia de uso</title> 
+    </head>
 
 <h1>Backoffice web - guia de uso</h1>
-
-<div >
-    <div style="border-radius: 1em;">
+<body style="background-color: rgba(238, 247, 247, 0.932);">
+<div>
+    
+    <div style="border-radius: 1em; border: 2px solid #969696; margin-right: 10em; margin-left: 5em; background-color: aliceblue;">
         <ol>
+            <h4>Contenidos</h4>
             <li>
-                <a href="Login">Login</a>
+                <a href="#Login">Login</a>
             </li>
             <li>
-                <a href="AddAdmin">Agregar administradores</a>
+                <a href="#AddAdmin">Agregar administradores</a>
             </li>
             <li>
-                <a href="SearchUser">Buscar usuarios</a>
+                <a href="#SearchUser">Buscar usuarios</a>
             </li>
             <li>
-                <a href="ListServices">Listar servicios</a>
+                <a href="#ListServices">Listar servicios</a>
             </li>
             <li>
-                <a href="EditTrainings">Administrar entrenamientos</a>
+                <a href="#EditTrainings">Administrar entrenamientos</a>
             </li>
             <li>
-                <a href="BlockServices">Bloquear servicios</a>
+                <a href="#BlockServices">Bloquear servicios</a>
             </li>
             <li>
-                <a href="EntrenadorReconocido">Aprobar/rechazar petiticiones de entrenador reconocido</a>
+                <a href="#EntrenadorReconocido">Aprobar/rechazar petiticiones de entrenador reconocido</a>
             </li>
             <li>
-                <a>Métricas</a>
+                <a href="#Metrics">Métricas</a>
             </li>
         </ol>
     </div>
@@ -36,15 +43,21 @@
 <div>
     <h3 id="Login">Login</h3>
     Se pedirá al usuario un correo electrónico y una contraseña asociadas a una cuenta de administrador
-    <img src="imgs/LoginPage.PNG">
+    <div style="margin-left: 2rem; margin-right: 2rem;">
+        <img src="imgs/LoginPage.PNG">
+    </div>
+    
 </div>
 
 <div>
     <h3 id="AddAdmin">Agregar administradores</h3>
-    <img src = "imgs/AgregarAdministrador.PNG" alt="Agregar administradores">
+    <div style="margin-top: 1rem; margin-left: 2rem; margin-right: 2rem;" >
+        <img src = "imgs/AgregarAdministrador.PNG" alt="Agregar administradores">
+    </div>
     <div>
         <ol>
-            Campos requeridos
+            Para agregar un nuevo administrador serán requeridos los siguientes campos
+            <div style="font-style: italic;">Campos requeridos</div>
             <li>
                 Correo electrónico: El mismo será pedido para poder acceder al Backoffice 
             </li>
@@ -61,46 +74,70 @@
 <div>
     <h3 id="SearchUser">Buscar usuarios</h3>
     Al acceder a la pestaña de "Buscar Usuarios" en la barra de navegación nos encontramos con la siguiente ventana
-    <img src="imgs/BuscarUsuariosSinFiltros.PNG">
+    <div style="margin-left: 2rem; margin-right: 2rem; margin-top: 1rem; margin-bottom: 1rem;">
+        <img src="imgs/BuscarUsuariosSinFiltros.PNG">
+    </div>
+    <h4>Aplicación de filtros</h4>
     Se pueden aplicar los siguientes filtros:
-    <ul>
-        <li>Correo electrónico del usuario</li>
-        <li>Nombre del usuario</li>
-        <li>Id del usuario</li>
-        <li>Atleta</li>
+    <ul style="margin-bottom: 1rem;">
+        <li style="font-weight: bold;">Correo electrónico del usuario</li>
+        <li style="font-weight: bold;">Nombre del usuario</li>
+        <li style="font-weight: bold;">Id del usuario</li>
+        <li style="font-weight: bold;">Atleta</li>
         Si el usuario que queremos encontrar es o no un Atleta
-        <li>Entrenador</li>
+        <li style="font-weight: bold;">Entrenador</li>
         Si el usuario que queremos encontrar es o no un Entrenador
     </ul>
     Los filtros pueden combinarse para reducir la busqueda
-    <img src="imgs/BuscarUsuariosConFiltros.PNG">
+    <div style="margin-left: 2rem; margin-right: 2rem; margin-top: 1rem; margin-bottom: 1rem;">   
+        <img src="imgs/BuscarUsuariosConFiltros.PNG">
+    </div>
+    <h4>Quitar filtros</h4>
     Para remover los filtros, se hace click en los mismos para removerlos
+    <h4>Mostrar resultados</h4>
     <div>
         Para realizar la busqueda, se selecciona "Cargar usuarios".
         A continuación se presentan los resultados de una busqueda de usuarios sin 
         filtros aplicados
     </div>
-    <img src="imgs/ResultadosBusquedaUsuariosSinFiltros.PNG">
-
+    <div style="margin-left: 2rem; margin-right: 2rem; margin-top: 1rem;">
+        <img src="imgs/ResultadosBusquedaUsuariosSinFiltros.PNG">
+    </div>
     <h4>Bloqueo/desbloqueo de usuarios</h4>
     Tomámos un usuario que no se encuentra bloqueado, y seleccionamos el boton "Ver"
-    <img src="imgs/Usuario20Ejemplo.PNG">
+    <div style="margin-left: 2rem; margin-right: 2rem; margin-top: 1rem;">
+        <img src="imgs/Usuario20Ejemplo.PNG">
+    </div>
+    
     Nos redirige a una página cargada con los datos del usuario y la opción de bloquearlo
-    <img src="imgs/Usuario20EnDetalle.PNG">
+    <div style="margin-left: 2rem; margin-right: 2rem; margin-top: 1rem;">
+        <img src="imgs/Usuario20EnDetalle.PNG">
+    </div>
+    
     Seleccionando la opción bloquear, el usuario queda bloqueado
-    <img src="imgs/Usuario20BloqueadoEnDetalle.PNG">
+    <div style="margin-left: 2rem; margin-right: 2rem; margin-top: 1rem;">
+        <img src="imgs/Usuario20BloqueadoEnDetalle.PNG">
+    </div>
+    
     Para debloquearlo, se debe apretar el mismo botón.
 </div>
 
 <div>
-    <h3 id="ListServices">Listar servicios</h3>
+    <h3 id="ListServices"> Listar servicios</h3>
     Al ingresar correctamente al Backoffice. Se presentara un listado del estado
     de los distintos servicios
-    <img src="imgs/ListarServiciosUnoFallando.PNG">
+    <div style="margin-left: 2rem; margin-right: 2rem; margin-top: 1rem;">
+        <img src="imgs/ListarServiciosUnoFallando.PNG">
+    </div>
     Servicios en rojo se encuentran inactivos, en verde se encuentran activos
     <div>El filtro de la página permite mostrar sólo los servicios activos/inactivos</div>
-    <img src="imgs/ListarServiciosSoloInactivos.PNG">
-    <img src="imgs/ListarServiciosSoloActivos.PNG">
+    <div style="margin-left: 2rem; margin-right: 2rem; margin-top: 1rem;">
+        <img src="imgs/ListarServiciosSoloInactivos.PNG">
+    </div>
+    <div style="margin-left: 2rem; margin-right: 2rem; margin-top: 1rem;">
+        <img src="imgs/ListarServiciosSoloActivos.PNG">
+    </div>
+
 </div>
 
 
@@ -108,15 +145,20 @@
     <h3 id="BlockServices">Bloquear servicios</h3>
     Seleccionando "Bloquear servicios" en la barra de navegación nos encontramos con 
     la siguiente página
-    <img src="imgs/BloquearServicios.PNG">
+    <div style="margin-left: 2rem; margin-right: 2rem; margin-top: 1rem;">
+        <img src="imgs/BloquearServicios.PNG">
+    </div>
     Cada servicio tiene un toggle, que indica el estado actual del servicio y un "Estado" que 
     indica si el servicio se encuentra disponible.  Que un servicio se encuentre bloqueado 
     no implica que el servicio no esta disponible. Un servicio no disponible no muestra ningún 
     estado en su toggle.
-
-    <img src="imgs/ServicioEntrenamientosBloqueado.PNG">
+    <div style="margin-left: 2rem; margin-right: 2rem; margin-top: 1rem;">
+        <img src="imgs/ServicioEntrenamientosBloqueado.PNG">
+    </div> 
     Al bloquear un servicio, el mismo aparece listado como inactivo en la pagina de servicios
-    <img src="imgs/ListarServiciosUnoFallando.PNG">
+    <div style="margin-left: 2rem; margin-right: 2rem; margin-top: 1rem;">
+        <img src="imgs/ListarServiciosUnoFallando.PNG">
+    </div>
 </div>
 
 
@@ -125,54 +167,81 @@
     La pestaña "Aprobar/rechazar peticiones de entrenador" muestra las distintas peticiones
     realizadas por los entrenadores. Cada petición tiene un video asociado, que no aparece
     inicialmente en la ventana.
-    <img src="imgs/VentanaEntrenadorReconocido.PNG">
+    <div style="margin-left: 2rem; margin-right: 2rem; margin-top: 1rem;">
+        <img src="imgs/VentanaEntrenadorReconocido.PNG">
+    </div>
     Seleccionar "mostrar" permite visualizar el video en la misma página
-    <img src="imgs/PeticionConVideo.PNG">
+    <div style="margin-left: 2rem; margin-right: 2rem; margin-top: 1rem;">
+        <img src="imgs/PeticionConVideo.PNG">
+    </div>
 </div>
 
 <div>
     <h3 id="EditTrainings">Administrar entrenamientos</h3>
-    <img src="imgs/FiltrosEntrenamientos.PNG">
+    <div style="margin-left: 2rem; margin-right: 2rem; margin-top: 1rem;">
+        <img src="imgs/FiltrosEntrenamientos.PNG">
+    </div>
+    
     <h4>Filtros aplicables</h4>
     Se pueden aplicar los siguientes filtros a los entrenamientos:
     <ul>
-        <li>
+        <li style="font-weight: bold;">
             Id entrenador
         </li>
-        <li>
+        <li style="font-weight: bold;">
             Título del entrenamiento
         </li>
-        <li>
+        <li style="font-weight: bold;">
             Entrenamiento bloqueado/desbloqueado
         </li>
-        <li>
+        <li style="font-weight: bold;">
             Dificultad del entrenamiento (fácil/medio/dificil)
         </li>
-        <li>
+        <li style="font-weight: bold;">
             Tipo del entrenamiento
         </li>
     </ul>
     Los filtros pueden combinarse entre si. Para eliminar los filtros ya 
     aplicados, basta con hacer click sobre los mismos
-    <img src="imgs/FiltroEntrenamientoMostrar.PNG">
+    <div style="margin-left: 2rem; margin-right: 2rem; margin-top: 1rem;">
+        <img src="imgs/FiltroEntrenamientoMostrar.PNG">
+    </div>
     <h4>Edición de entrenamientos</h4>
     <div>
         Los entrenamientos pueden ser bloqueados/desbloqueado o borrados. Para borrar, es necesario
     previamente habilitar la opción de borrado para el entrenamiento que se desea eliminar
     </div>
-    <img src="imgs/EntrenamientoResaltadoBorrado.PNG">
+    <div style="margin-left: 14rem; margin-right: 2rem; margin-top: 1rem;">
+        <img src="imgs/EntrenamientoResaltadoBorrado.PNG">
+    </div>
+    
     <h4>Vista de metas</h4>
     Seleccionando la opcion "ver metas" abre una nueva ventana con las metas asociadas al entrenamiento
-    <img src="imgs/Entrenamiento1Goals.PNG">
+    <div style="margin-left: 8rem; margin-right: 2rem; margin-top: 1rem;">
+        <img src="imgs/Entrenamiento1Goals.PNG">
+    </div>
+    
     <h4>Vista de actividades</h4>
     <div>
         Seleccionando la opción "ver actividades" abre una nueva ventana con las actividades asociadas al entrenamiento.
         Cada actividad tiene un título, una descripción y una imágen asociada. En el caso de que no posea una imagen, se 
         muestra un placeholder
     </div>
-    <img src="imgs/Entrenamiento1Activities.PNG">
+    <div style="margin-left: 12rem; margin-right: 2rem; margin-top: 1rem;">
+        <img src="imgs/Entrenamiento1Activities.PNG">
+    </div>
 </div>
 
 <div>
-    
+
+    <h3 id = "#Metrics">Métricas</h3>
+    En la pestaña métricas,se elige la métrica que se quiere visualizar
+    <div style="margin-left: 2rem; margin-right: 2rem; margin-top: 1rem;">
+        <img src="imgs/EjemploMetrica.PNG">
+    </div>
+
 </div>
+
+</body>
+
+</html>
